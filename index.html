@@ -15,6 +15,7 @@
     }
     html { scroll-behavior: smooth; }
 
+    /* Hero card */
     .container {
       min-height: 100vh;
       display: flex;
@@ -22,32 +23,29 @@
       justify-content: center;
       padding: 1rem;
     }
-
     .card {
       max-width: 420px;
       width: 100%;
       padding: 2rem;
       background: rgba(255,255,255,0.08);
-      border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
       backdrop-filter: blur(10px);
       box-shadow: 0 8px 32px rgba(0,0,0,0.7);
       text-align: center;
     }
-
     h1 {
-      margin: 0 0 .25rem;
+      margin: 0 0 .5rem;
       font-size: 2rem;
       letter-spacing: 1px;
       color: #ffe082;
     }
     p.lead {
-      margin: .25rem 0 1.25rem;
-      line-height: 1.4;
+      margin: .25rem 0 1.5rem;
       font-size: 1rem;
+      line-height: 1.4;
       opacity: .9;
     }
-
     .links a {
       display: inline-block;
       margin: .25rem .5rem;
@@ -57,21 +55,24 @@
       text-decoration: none;
       border: 1px solid rgba(255,255,255,0.3);
       border-radius: 8px;
-      transition: background .2s;
+      transition: color .2s, border-color .2s, background .2s;
     }
     .links a:hover {
-      background: rgba(255,255,255,0.15);
+      color: #111;
+      background: #ffe082;
+      border-color: #ffe082;
     }
 
+    /* Section styling */
     section {
       max-width: 640px;
       margin: 2rem auto;
       padding: 2rem;
       background: rgba(255,255,255,0.06);
-      border-radius: 14px;
       border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      color: #eee;
     }
     section h2 {
       margin-top: 0;
@@ -82,30 +83,55 @@
     section p, section ul {
       font-size: 1.05rem;
       line-height: 1.6;
+      margin: 1rem 0 0;
     }
-    section ul {
-      padding-left: 1.2rem;
+
+    /* Work list */
+    #work ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
     }
-    footer {
-      margin-top: 2rem;
-      font-size: .75rem;
-      color: rgba(255,255,255,0.5);
+    #work li {
+      margin-bottom: .75rem;
+    }
+    #work a {
+      color: #eee;
+      text-decoration: none;
+      position: relative;
+      padding-left: .25rem;
+      transition: color .2s;
+    }
+    #work a::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      width: 2px; height: 0;
+      background: #ffe082;
+      transition: height .2s;
+      transform: translateY(-50%);
+    }
+    #work a:hover {
+      color: #ffe082;
+    }
+    #work a:hover::before {
+      height: 1em;
     }
 
     /* Contact card */
-    .contact-card {
+    #contact .contact-card {
       max-width: 360px;
       margin: 0 auto;
       padding: 1.5rem;
       background: rgba(255,255,255,0.08);
-      border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
       backdrop-filter: blur(8px);
       box-shadow: 0 6px 24px rgba(0,0,0,0.6);
       text-align: left;
     }
     .contact-card h3 {
-      margin: 0 0 .5rem;
+      margin: 0 0 1rem;
       font-size: 1.2rem;
       color: #ffe082;
     }
@@ -114,24 +140,44 @@
       margin: .5rem 0;
       color: #eee;
       text-decoration: none;
-      font-size: 1rem;
+      position: relative;
+      padding-left: .5rem;
+      transition: color .2s;
+    }
+    .contact-card a::before {
+      content: '';
+      position: absolute;
+      left: 0; top: .6em;
+      width: 4px; height: 4px;
+      background: #ffe082;
+      border-radius: 50%;
+      transition: transform .2s;
     }
     .contact-card a:hover {
-      text-decoration: underline;
+      color: #111;
+    }
+    .contact-card a:hover::before {
+      transform: scale(1.5);
+    }
+
+    /* Footer inside hero */
+    .card footer {
+      margin-top: 2rem;
+      font-size: .75rem;
+      color: rgba(255,255,255,0.5);
     }
 
     @media (max-width: 600px) {
-      .card, section, .contact-card {
-        padding: 1rem;
-      }
+      .card, section, .contact-card { padding: 1rem; }
     }
   </style>
 </head>
 <body>
+
   <div class="container">
     <div class="card">
-      <h1>Sandy</h1>
-      <p class="lead">CTO at TRYMBKM  •  Humane Tech Visionary</p>
+      <h1>Santhosh Buvaneswari</h1>
+      <p class="lead">Chief Technology Officer at TRYMBKM  •  Humane Tech Visionary</p>
       <div class="links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
@@ -164,11 +210,12 @@
     <h2>Contact</h2>
     <div class="contact-card">
       <h3>Get in Touch</h3>
-      <a href="https://commacards.com/p/sandy">✉️ Comma Profile</a>
-      <a href="mailto:burn.bsandyofficial@gmail.com">✉️ burn.bsandyofficial@gmail.com</a>
-      <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank">🔗 LinkedIn</a>
-      <a href="https://x.com/bsandyofficial" target="_blank">🐦 Twitter</a>
+      <a href="https://commacards.com/p/sandy">Comma Profile</a>
+      <a href="mailto:bsandyofficial@gmail.com">bsandyofficial@gmail.com</a>
+      <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank">LinkedIn</a>
+      <a href="https://x.com/bsandyofficial" target="_blank">Twitter</a>
     </div>
   </section>
+
 </body>
 </html>
