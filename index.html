@@ -92,8 +92,36 @@
       color: rgba(255,255,255,0.5);
     }
 
+    /* Contact card */
+    .contact-card {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+      text-align: left;
+    }
+    .contact-card h3 {
+      margin: 0 0 .5rem;
+      font-size: 1.2rem;
+      color: #ffe082;
+    }
+    .contact-card a {
+      display: block;
+      margin: .5rem 0;
+      color: #eee;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
-      .card, section {
+      .card, section, .contact-card {
         padding: 1rem;
       }
     }
@@ -118,28 +146,29 @@
     <p>
       I’m Santhosh Buvaneswari, the Earth of TRYMBKM and architect of mindful systems.  
       I design digital experiences that honour human attention and wellbeing.  
-      With a huge background working with technology, growth stage and global startups, I am commited to building a better future for all.
+      With a vast background in growth-stage and global startups, I’m committed to building a better future for all.
     </p>
   </section>
 
   <section id="work">
     <h2>Work</h2>
     <ul>
-      <li><strong>TRYMBKM</strong>: Leading the build of World's First Emotional Intelligence Ecosystem</li>
-      <li><strong>Comma</strong>: Developed a complete Smart Networking Solution for businesses and individuals</li>
-      <li><strong>IIT Madras</strong>: Worked on developing an In-house Virtual Production MoCap Studio. Contribute to ISRO project development and deployment at SHAR and HSFC</li>
-      <li><strong>University of Tennessee, Knoxville, USA</strong>: Worked on developing and testing of Autonomous Car in Virtual Rural Environment</li>
+      <li><a href="https://www.linkedin.com/company/trymbkm" target="_blank"><strong>TRYMBKM</strong></a>: Leading the build of the world’s first Emotional Intelligence ecosystem.</li>
+      <li><a href="https://commacards.com" target="_blank"><strong>Comma</strong></a>: Developed a complete Smart Networking solution for businesses and individuals.</li>
+      <li><a href="https://touchlab.iitm.ac.in" target="_blank"><strong>IIT Madras</strong></a>: Built an in-house virtual production MoCap studio; contributed to ISRO deployments at SHAR and HSFC.</li>
+      <li><a href="https://mabe.utk.edu" target="_blank"><strong>University of Tennessee, Knoxville</strong></a>: Developed and tested autonomous vehicle simulations in a rural VR environment.</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>
-      Let’s build humane tech together.  
-      <a href="mailto:burn.bsandyofficial@gmail.com" style="color:#ffe082;">Mail"</a> •  
-      <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank" style="color:#ffe082;">LinkedIn</a> •  
-      <a href="https://x.com/bsandyofficial" target="_blank" style="color:#ffe082;">Twitter</a>
-    </p>
+    <div class="contact-card">
+      <h3>Get in Touch</h3>
+      <a href="https://commacards.com/p/sandy">✉️ Comma Profile</a>
+      <a href="mailto:burn.bsandyofficial@gmail.com">✉️ burn.bsandyofficial@gmail.com</a>
+      <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank">🔗 LinkedIn</a>
+      <a href="https://x.com/bsandyofficial" target="_blank">🐦 Twitter</a>
+    </div>
   </section>
 </body>
 </html>
