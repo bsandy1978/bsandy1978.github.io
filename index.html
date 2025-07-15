@@ -1,7 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Sandy — Portfolio</title>
+  <style>
+    /* Noise texture from TransparentTextures.com (Asfalt Light) */
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: #eee;
+      background-color: #111;
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    }
+
+    /* Center container */
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    /* Glassmorphic card */
+    .card {
+      max-width: 400px;
+      width: 100%;
+      padding: 2rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin: 0.5rem 0 1.5rem;
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      color: #eee;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .links a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <div class="card">
+      <h1>Sandy</h1>
+      <p>CTO • Humane Tech Advocate • Builder of mindful digital experiences</p>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <footer>© 2025 Sandy</footer>
+    </div>
+  </div>
 </body>
 </html>
