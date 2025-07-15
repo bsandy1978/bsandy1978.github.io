@@ -70,6 +70,36 @@
       font-size: 0.75rem;
       color: rgba(255,255,255,0.5);
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.06);
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      color: #eee;
+      font-size: 1.05rem;
+    }
+    section:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+      color: #ffe082;
+    }
+    @media (max-width: 600px) {
+      .card, section {
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -85,5 +115,23 @@
       <footer>© 2025 Santhosh Buvaneswari</footer>
     </div>
   </div>
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am Santhosh Buvaneswari, a passionate technologist and advocate for humane technology. My mission is to build digital experiences that are mindful, ethical, and empowering for users. With a background in engineering and leadership, I strive to bridge the gap between technology and well-being.
+    </p>
+  </section>
+  <section id="work">
+    <h2>Work</h2>
+    <p>
+      My work spans across startups, open-source projects, and community initiatives. I specialize in architecting scalable systems, mentoring teams, and driving innovation with a focus on positive impact. Explore my projects and collaborations to learn more about my journey.
+    </p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Interested in collaborating or connecting? Reach out via <a href="mailto:santhosh@example.com" style="color:#ffe082;">email</a> or connect with me on <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank" style="color:#ffe082;">LinkedIn</a>.
+    </p>
+  </section>
 </body>
 </html>
