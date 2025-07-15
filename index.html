@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Sandy - The Earth</title>
+  <title>Sandy — Earth of TRYMBKM</title>
   <style>
-    /* Noise texture from TransparentTextures.com (Asfalt Light) */
+    /* Subtle noise texture */
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
@@ -13,8 +13,8 @@
       background-color: #111;
       background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
     }
+    html { scroll-behavior: smooth; }
 
-    /* Center container */
     .container {
       min-height: 100vh;
       display: flex;
@@ -23,9 +23,8 @@
       padding: 1rem;
     }
 
-    /* Glassmorphic card */
     .card {
-      max-width: 400px;
+      max-width: 420px;
       width: 100%;
       padding: 2rem;
       background: rgba(255,255,255,0.08);
@@ -37,46 +36,35 @@
     }
 
     h1 {
-      margin: 0 0 0.5rem;
+      margin: 0 0 .25rem;
       font-size: 2rem;
       letter-spacing: 1px;
+      color: #ffe082;
     }
-
-    p {
-      margin: 0.5rem 0 1.5rem;
+    p.lead {
+      margin: .25rem 0 1.25rem;
       line-height: 1.4;
       font-size: 1rem;
+      opacity: .9;
     }
 
     .links a {
       display: inline-block;
-      margin: 0.25rem 0.5rem;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
+      margin: .25rem .5rem;
+      padding: .5rem 1rem;
+      font-size: .9rem;
       color: #eee;
       text-decoration: none;
       border: 1px solid rgba(255,255,255,0.3);
       border-radius: 8px;
-      transition: background 0.2s;
+      transition: background .2s;
     }
-
     .links a:hover {
       background: rgba(255,255,255,0.15);
     }
 
-    /* Footer */
-    footer {
-      margin-top: 2rem;
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.5);
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     section {
-      max-width: 600px;
+      max-width: 640px;
       margin: 2rem auto;
       padding: 2rem;
       background: rgba(255,255,255,0.06);
@@ -84,17 +72,26 @@
       border: 1px solid rgba(255,255,255,0.10);
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
       color: #eee;
-      font-size: 1.05rem;
-    }
-    section:not(:last-child) {
-      margin-bottom: 1.5rem;
     }
     section h2 {
       margin-top: 0;
       font-size: 1.4rem;
-      letter-spacing: 0.5px;
+      letter-spacing: .5px;
       color: #ffe082;
     }
+    section p, section ul {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    section ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: .75rem;
+      color: rgba(255,255,255,0.5);
+    }
+
     @media (max-width: 600px) {
       .card, section {
         padding: 1rem;
@@ -105,8 +102,8 @@
 <body>
   <div class="container">
     <div class="card">
-      <h1>Santhosh Buvaneswari</h1>
-      <p>CTO • Humane Tech Advocate • Builder of mindful digital experiences</p>
+      <h1>Sandy</h1>
+      <p class="lead">CTO at TRYMBKM  •  Humane Tech Visionary</p>
       <div class="links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
@@ -115,22 +112,33 @@
       <footer>© 2025 Santhosh Buvaneswari</footer>
     </div>
   </div>
+
   <section id="about">
     <h2>About</h2>
     <p>
-      I am Santhosh Buvaneswari, a passionate technologist and advocate for humane technology. My mission is to build digital experiences that are mindful, ethical, and empowering for users. With a background in engineering and leadership, I strive to bridge the gap between technology and well-being.
+      I’m Santhosh “Sandy” Buvaneswari, the Earth-of-TRYMBKM and architect of mindful systems.  
+      I design digital experiences that honour human attention and wellbeing.  
+      With a huge background working with technology, growth stage and global startups, I am commited to building a better future for all.
     </p>
   </section>
+
   <section id="work">
     <h2>Work</h2>
-    <p>
-      My work spans across startups, open-source projects, and community initiatives. I specialize in architecting scalable systems, mentoring teams, and driving innovation with a focus on positive impact. Explore my projects and collaborations to learn more about my journey.
-    </p>
+    <ul>
+      <li><strong>TRYMBKM</strong>: Leading the build of World's First Emotional Intelligence Ecosystem</li>
+      <li><strong>Comma Cards</strong>: Developed a full-stack NFC business-card solution—React/Tailwind frontend, Node/Mongo backend.</li>
+      <li><strong>IIT Madras</strong>: Worked on developing an In-house Virtual Production MoCap Studio. Contribute to ISRO project development and deployment at SHAR and HSFC</li>
+      <li><strong>University of Tennessee, Knoxville, USA</strong>: Worked on developing and testing of Autonomous Car in Virtual Rural Environment</li>
+    </ul>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>
-      Interested in collaborating or connecting? Reach out via <a href="mailto:santhosh@example.com" style="color:#ffe082;">email</a> or connect with me on <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank" style="color:#ffe082;">LinkedIn</a>.
+      Let’s build humane tech together.  
+      <a href="mailto:burn.bsandyofficial@gmail.com" style="color:#ffe082;">Mail"</a> •  
+      <a href="https://www.linkedin.com/in/santhoshbuvaneswari" target="_blank" style="color:#ffe082;">LinkedIn</a> •  
+      <a href="https://x.com/bsandyofficial" target="_blank" style="color:#ffe082;">Twitter</a>
     </p>
   </section>
 </body>
